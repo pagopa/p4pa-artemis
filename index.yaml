@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  artemis:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-14T15:36:29.364779745Z"
+    description: Active MQ Artemis Broker
+    digest: 65e8992c74d0907e116b0931ca57017c386fe971f95378119b9f2abf9805a2c9
+    name: artemis
+    type: application
+    urls:
+    - https://github.com/pagopa/p4pa-artemis/releases/download/artemis-0.1.0/artemis-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-14T15:36:29.364785686Z"
