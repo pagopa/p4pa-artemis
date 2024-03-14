@@ -16,4 +16,7 @@ spec:
     - port: 61613
       targetPort: stomp
       name: stomp
+    - port: 8161
+      targetPort: 8161
+      name: admin
   selector: {{- include "artemis.selectorLabels" . | nindent 4 }}
