@@ -37,12 +37,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - port: 61616
-              protocol: TCP
+            - containerPort: 61616
               name: netty
-            - port: 5672
+            - containerPort: 5672
               name: amqp
-            - port: 61613
+            - containerPort: 61613
               name: stomp
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
