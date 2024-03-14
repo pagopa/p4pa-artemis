@@ -43,7 +43,7 @@ spec:
               name: amqp
             - containerPort: 61613
               name: stomp
-            - cotainerPort: 8161
+            - containerPort: 8161
               name: admin
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
