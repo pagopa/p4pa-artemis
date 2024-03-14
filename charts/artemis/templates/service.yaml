@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: { { include "artemis.fullname" . } }
-  labels: { { - include "artemis.labels" . | nindent 4 } }
+  name: {{ include "artemis.fullname" . }}
+  labels: {{- include "artemis.labels" . | nindent 4 }}
 spec:
-  type: { { .Values.service.type } }
+  type: {{ .Values.service.type }}
   ports:
     - port: 61616
       targetPort: netty
@@ -16,4 +16,4 @@ spec:
     - port: 61613
       targetPort: stomp
       name: stomp
-  selector: { { - include "artemis.selectorLabels" . | nindent 4 } }
+  selector: {{- include "artemis.selectorLabels" . | nindent 4 }}
