@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: apache/activemq-artemis
   pullPolicy: IfNotPresent
-  tag: "2.32.0"
+  tag: "2.32.0@sha256:80301ffa555a65af5825ce7db6a5d3017d26e4f7a3595521a0b0ee6d8113146b"
 
 imagePullSecrets: []
 nameOverride: ""
